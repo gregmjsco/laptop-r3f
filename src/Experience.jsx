@@ -56,7 +56,16 @@ export default function Experience() {
           </primitive>
 
           {/* Name Text */}
-          <Text font="./bebas-neue-v14-latin-regular.woff">GREG JOHNSTON</Text>
+          <Text
+            font="./bebas-neue-v14-latin-regular.woff"
+            fontSize={1}
+            position={[2, 0.75, 0.75]}
+            rotation-y={-1.25}
+            maxWidth={2}
+            textAlign="center"
+          >
+            GREG JOHNSTON
+          </Text>
         </Float>
       </PresentationControls>
 
