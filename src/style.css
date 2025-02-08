@@ -15,7 +15,7 @@ body,
 
 .content-embed {
   position: relative;
-  background: white;
+  /* background: white; */
   border-radius: 37.5px;
   width: 1024px;
   height: 670px;

@@ -102,7 +102,7 @@ const Portfolio = () => {
       <main>
         {/* Hero Section */}
         <section className="hero container">
-          <img className="hero__img" src="/public/hero.jpg" alt="" />
+          <img className="hero__img" src="/hero.jpg" alt="" />
           <h2 className="hero__subtitle">Hello, I'm Greg</h2>
           <h1 className="hero__title">WEB DEVELOPER</h1>
           <p className="hero__description">
@@ -166,7 +166,173 @@ const Portfolio = () => {
         </section>
 
         {/* Featured Projects */}
-        {/* You can repeat similar structure for Featured and Contact sections */}
+
+        <section class="featured container section">
+          <div class="featured__wrapper">
+            <a
+              href="https://gregmjsco.github.io/ball-plain/"
+              target="_blank"
+              class="featured__title ballagain_link"
+            >
+              Mockup Apparel Page - <strong>Ball Again React Project</strong>
+            </a>
+            <a
+              href="https://github.com/gregmjsco/ball-plain"
+              class="featured__link"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+            </a>
+          </div>
+          <p>
+            First mockup of a sports brand website using React ande Styled
+            Components
+          </p>
+          <div id="featured" class="featured__info-container">
+            <div>
+              <h3 class="featured__label">Tools used</h3>
+              <ul class="featured__teck-stack">
+                <li class="featured__info">React</li>
+                <li class="featured__info">Styled Components</li>
+                <li class="featured__info">Motion library</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="featured__label">Project type</h3>
+              <p class="featured__info">Front-end project</p>
+            </div>
+            <div>
+              <h3 class="featured__label">Functionality</h3>
+              <p class="featured__info">
+                Responsive design styled with Styled Components using React
+                components and the motion library for animations
+              </p>
+            </div>
+          </div>
+          <div class="featured__img-container">
+            <div class="featured__img-wrapper">
+              <img
+                loading="lazy"
+                src="public/ballagain-desktop-fullpage.png"
+                alt=""
+              />
+            </div>
+            <div class="featured__img-wrapper">
+              <img
+                loading="lazy"
+                src="public/ballagain-mobile-fullpage.png"
+                alt=""
+              />
+            </div>
+            <div class="featured__img-wrapper">
+              <img
+                loading="lazy"
+                src="public/ballagain-mobile-menu.png"
+                alt=""
+              />
+            </div>
+            <div class="featured__img-wrapper">
+              <img
+                loading="lazy"
+                src="public/ballagain-mobile-cart.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="featured container section">
+          <h3 class="featured__subtitle">Recent Projects</h3>
+          <div class="featured__wrapper">
+            <h2 class="featured__title">Jobs in Japan - Laravel Project</h2>
+            <a
+              href="https://github.com/gregmjsco/laravel-job"
+              class="featured__link"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+            </a>
+          </div>
+          <p>
+            First project as part of study using many technologies for the first
+            time. Learned a lot about Laravel, Tailwind and PHP.
+          </p>
+          <div id="featured" class="featured__info-container">
+            <div>
+              <h3 class="featured__label">Tools used</h3>
+              <ul class="featured__teck-stack">
+                <li class="featured__info">Laravel</li>
+                <li class="featured__info">Tailwind CSS</li>
+                <li class="featured__info">PHP with Blade Templates</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="featured__label">Project type</h3>
+              <p class="featured__info">Back-end project</p>
+            </div>
+            <div>
+              <h3 class="featured__label">Functionality</h3>
+              <p class="featured__info">
+                Responsive design styled with Tailwind using Blade template
+                components
+              </p>
+            </div>
+          </div>
+          <div class="featured__img-container">
+            <div class="featured__img-wrapper">
+              <img loading="lazy" src="public/homepage.png" alt="" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img loading="lazy" src="public/profilepage.png" alt="" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img loading="lazy" src="public/alljobs.png" alt="" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img loading="lazy" src="public/applyform.png" alt="" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img loading="lazy" src="public/jobpage.png" alt="" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img loading="lazy" src="public/searchfunctionality.png" alt="" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img loading="lazy" src="public/bookmarkedjobs.png" alt="" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img
+                loading="lazy"
+                src="public/logincredentialcheck.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
