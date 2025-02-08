@@ -5,6 +5,7 @@ import {
   useGLTF,
   ContactShadows,
   Html,
+  Text,
 } from "@react-three/drei";
 import Portfolio from "./Portfolio";
 import { RectAreaLight } from "three";
@@ -20,6 +21,7 @@ export default function Experience() {
       <Environment preset="city" />
       <color args={["#060324"]} attach="background" />
 
+      {/* Controls that move the modals instead of the camera */}
       <PresentationControls
         global
         rotation={[0.13, 0.1, 0]}
@@ -29,6 +31,7 @@ export default function Experience() {
         snap={{ mass: 4, tension: 400 }}
       >
         <Float rotationIntensity={0.4}>
+          {/* Laptop Screen Light */}
           <rectAreaLight
             width={2.5}
             height={1.65}
@@ -37,6 +40,8 @@ export default function Experience() {
             rotation={[0.1, Math.PI, 0]}
             position={[0, 0.55, -1.15]}
           />
+
+          {/* Laptop with a Html inside to show portfolio site component */}
           <primitive object={computer.scene} position-y={-1.2}>
             <Html
               className="content-embed"
@@ -49,9 +54,13 @@ export default function Experience() {
               <Portfolio />
             </Html>
           </primitive>
+
+          {/* Name Text */}
+          <Text font="./bebas-neue-v14-latin-regular.woff">GREG JOHNSTON</Text>
         </Float>
       </PresentationControls>
 
+      {/* Shadows on the floor */}
       <ContactShadows position-y={-1.4} opacity={0.4} scale={5} blur={2.5} />
     </>
   );
