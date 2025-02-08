@@ -4,6 +4,7 @@ import {
   Environment,
   useGLTF,
   ContactShadows,
+  Html,
 } from "@react-three/drei";
 
 export default function Experience() {
@@ -26,7 +27,15 @@ export default function Experience() {
         snap={{ mass: 4, tension: 400 }}
       >
         <Float rotationIntensity={0.4}>
-          <primitive object={computer.scene} position-y={-1.2} />
+          <primitive object={computer.scene} position-y={-1.2}>
+            <Html transform wrapperClass="htmlScreen">
+              <iframe
+                src="https://portfolio-7povwc5fs-gregmjscos-projects.vercel.app/"
+                sandbox="allow-scripts allow-same-origin"
+                frameborder="0"
+              ></iframe>
+            </Html>
+          </primitive>
         </Float>
       </PresentationControls>
 
