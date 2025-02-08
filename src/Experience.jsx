@@ -6,6 +6,7 @@ import {
   ContactShadows,
   Html,
 } from "@react-three/drei";
+import Portfolio from "./Portfolio";
 
 export default function Experience() {
   const computer = useGLTF(
@@ -28,12 +29,15 @@ export default function Experience() {
       >
         <Float rotationIntensity={0.4}>
           <primitive object={computer.scene} position-y={-1.2}>
-            <Html transform wrapperClass="htmlScreen">
-              <iframe
-                src="https://portfolio-7povwc5fs-gregmjscos-projects.vercel.app/"
-                sandbox="allow-scripts allow-same-origin"
-                frameborder="0"
-              ></iframe>
+            <Html
+              className="content-embed"
+              transform
+              wrapperClass="htmlScreen"
+              distanceFactor={1.17}
+              position={[0, 1.56, -1.4]}
+              rotation-x={-0.256}
+            >
+              <Portfolio />
             </Html>
           </primitive>
         </Float>

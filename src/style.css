@@ -9,6 +9,15 @@ body,
   background: ivory;
 }
 
-canvas {
+.r3f {
   touch-action: none;
+}
+
+.content-embed {
+  position: relative;
+  background: white;
+  border-radius: 37.5px;
+  width: 1024px;
+  height: 670px;
+  overflow: scroll;
 }
