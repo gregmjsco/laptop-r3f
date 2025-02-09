@@ -16,6 +16,10 @@ export default function Experience() {
   );
   console.log(computer);
 
+  const cup = useGLTF(
+    "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/cup-tea/model.gltf"
+  );
+
   return (
     <>
       <Environment preset="city" />
@@ -39,6 +43,14 @@ export default function Experience() {
             color="#8a30ff"
             rotation={[0.1, Math.PI, 0]}
             position={[0, 0.55, -1.15]}
+          />
+
+          <primitive
+            object={cup.scene}
+            position-x={-2.5}
+            position-y={-0.5}
+            position-z={-1}
+            scale={2}
           />
 
           {/* Laptop with a Html inside to show portfolio site component */}
