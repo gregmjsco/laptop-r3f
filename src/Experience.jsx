@@ -9,6 +9,8 @@ import {
 } from "@react-three/drei";
 import Portfolio from "./Portfolio";
 import { RectAreaLight } from "three";
+import { useFrame } from "@react-three/fiber";
+import { useRef } from "react";
 
 export default function Experience() {
   const computer = useGLTF(
@@ -19,6 +21,12 @@ export default function Experience() {
   const cup = useGLTF(
     "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/cup-tea/model.gltf"
   );
+
+  const cupRef = useRef();
+
+  useFrame(({ clock }) => {
+    cupRef.current.rotation.y = Math.sin(clock.getElapsedTime() / 3) / 2;
+  });
 
   return (
     <>
@@ -46,6 +54,7 @@ export default function Experience() {
           />
 
           <primitive
+            ref={cupRef}
             object={cup.scene}
             position-x={-2.5}
             position-y={-0.5}
